@@ -4,7 +4,7 @@ import { Link, } from 'react-router-dom';
 
 
 const Navbar = () => (
-  <Menu>
+  <Menu inverted secondary style={text}>
     <Link to='/aboutme'>
     <Menu.Item>
       About Me
@@ -25,6 +25,21 @@ const Navbar = () => (
       Personal Life
     </Menu.Item>
     </Link>
+    <Menu.Menu  position='right'>
+
+    <Link to='/'>
+    <Menu.Item>
+      Home
+    </Menu.Item>
+    </Link>
+    </Menu.Menu>
   </Menu>
 )
 export default Navbar;
+
+const text = {
+  fontFamily: "'Merriweather', serif",
+  fontSize: '20px ',
+  textShadow: '1px 1px black',
+  // position: 'fixed',
+}

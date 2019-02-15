@@ -1,12 +1,24 @@
 import React from "react";
-import { Header, Container, } from 'semantic-ui-react';
+import { Header, } from 'semantic-ui-react';
 
 const Hobbies = () => (
 
-  <Container>
-    <Header position='center' as='h1'>
-      Hello World
+  <Header textAlign="center" as='h1' style={video.content}>
+    My Hobbies
   </Header>
-  </Container>
 )
 export default Hobbies;
+
+const video = {
+  content: {
+    position: 'fixed',
+    top: '50',
+    // background: 'rgba(0, 0, 0, 0.5)',
+    color: '#f1f1f1',
+    width: "100%",
+    padding: '20px',
+    fontSize: '50px',
+    textShadow: '1px 1px black',
+    fontFamily: "'Merriweather', serif",
+  },
+}

@@ -2,10 +2,11 @@ import React from "react";
 import { Header, } from 'semantic-ui-react';
 
 const Hobbies = () => (
-
+  <div>
   <Header textAlign="center" as='h1' style={video.content}>
     My Hobbies
   </Header>
+  </div>
 )
 export default Hobbies;
 

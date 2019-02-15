@@ -2,10 +2,12 @@ import React from "react";
 import { Header, } from 'semantic-ui-react';
 
 const Contact = () => (
+  <div>
 
     <Header textAlign='center' as='h1' style={video.content}>
       Contact Me
   </Header>
+  </div>
 )
 export default Contact;
 

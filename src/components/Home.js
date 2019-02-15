@@ -1,18 +1,17 @@
 import React from 'react';
 import { Header, } from 'semantic-ui-react';
 import ReactPlayer from 'react-player';
-// import backgroundvideo from '../video/backgroundvideo.mp4'
 
 const Home = () => (
   <div>
-  <Header textAlign="center" as='h1'>
+  <Header textAlign="center" as='h1' style={styles.content}>
     Harlan Evans
   </Header>
   </div>
 )
 export default Home;
 
-const video = {
+const styles = {
   content: {
     position: 'fixed',
     top: '50',

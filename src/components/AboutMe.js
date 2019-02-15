@@ -2,9 +2,11 @@ import React from "react";
 import { Header, } from 'semantic-ui-react';
 
 const AboutMe = () => (
+  <div>
     <Header as='h1' textAlign="center" style={video.content}>
       About Me
     </Header>
+  </div>
 )
 export default AboutMe;
 

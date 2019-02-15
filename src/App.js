@@ -7,9 +7,11 @@ import AboutMe from './components/AboutMe';
 import Contact from './components/Contact';
 import PersonalLife from './components/PersonalLife';
 import Hobbies from './components/Hobbies';
-
+import videoSource from './assets/rain_two.mp4';
 import Player from './components/Player';
 import './App.css';
+import './index.css';
+import { Video, } from './styles/Style';
 
 
 class App extends React.Component {
@@ -17,8 +19,11 @@ class App extends React.Component {
     return (
 
       <Fragment>
-        <Player>
 
+        {/* <Video /> */}
+        {/* <video class='background-image' autoPlay>
+          <source src={videoSource} type='video/mp4'/>
+        </video> */}
         <Navbar />
         <Switch>
           <Route exact path='/' component={Home} />
@@ -27,7 +32,6 @@ class App extends React.Component {
           <Route exact path='/personallife' component={PersonalLife} />
           <Route exact path='/hobbies' component={Hobbies} />
         </Switch>
-        </Player>
       </Fragment>
     )
   }
@@ -37,4 +41,12 @@ export default App;
 
 const text = {
   fontFamily: "'Merriweather', serif",
+}
+
+const background = {
+  position: "fixed",
+  right: '0',
+  bottom: '0',
+  minWidth: "100%",
+  minHeight: "100%",
 }

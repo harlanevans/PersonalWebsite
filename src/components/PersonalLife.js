@@ -2,10 +2,12 @@ import React from "react";
 import { Header, } from 'semantic-ui-react';
 
 const PersonalLife = () => (
+  <div>
 
     <Header textAlign="center" as='h1' style={video.content}>
       My Personal Life
   </Header>
+  </div>
 )
 export default PersonalLife;
 

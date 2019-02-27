@@ -20,6 +20,5 @@ const video = {
     padding: '20px',
     fontSize: '50px',
     textShadow: '1px 1px black',
-    fontFamily: "'Merriweather', serif",
   },
 }

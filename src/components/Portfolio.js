@@ -1,18 +1,16 @@
 import React from "react";
-import { Header, Grid } from 'semantic-ui-react';
-import { Title } from "../styles/Style";
+import { Header, } from 'semantic-ui-react';
+import { Title, } from '../styles/Style';
 
-const AboutMe = () => (
+const PersonalLife = () => (
   <div>
-    <Grid>
 
-    <Title style={video.content}>
-      About Me
-    </Title>
-    </Grid>
+    <Title textAlign="center" as='h1' style={video.content}>
+      Portfolio
+  </Title>
   </div>
 )
-export default AboutMe;
+export default PersonalLife;
 
 const video = {
   content: {

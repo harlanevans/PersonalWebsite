@@ -5,7 +5,7 @@ import Home from './components/Home';
 import Navbar from './components/NavBar';
 import AboutMe from './components/AboutMe';
 import Contact from './components/Contact';
-import PersonalLife from './components/PersonalLife';
+import Portfolio from './components/Portfolio';
 import Hobbies from './components/Hobbies';
 import videoSource from './assets/rain_two.mp4';
 import Player from './components/Player';
@@ -19,17 +19,12 @@ class App extends React.Component {
     return (
 
       <Fragment>
-
-        {/* <Video /> */}
-        {/* <video class='background-image' autoPlay>
-          <source src={videoSource} type='video/mp4'/>
-        </video> */}
         <Navbar />
         <Switch>
           <Route exact path='/' component={Home} />
           <Route exact path='/aboutme' component={AboutMe} />
           <Route exact path='/contact' component={Contact} />
-          <Route exact path='/personallife' component={PersonalLife} />
+          <Route exact path='/portfolio' component={Portfolio} />
           <Route exact path='/hobbies' component={Hobbies} />
         </Switch>
       </Fragment>

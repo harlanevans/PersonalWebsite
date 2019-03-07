@@ -17,31 +17,36 @@ class Home extends React.Component {
   render() {
     return (
       <div>
-        <Grid columns={1}>
-          <Grid.Column>
-            <Grid.Row style={styles.row}>
-
+    <div class='focus-in-contract-faster'>
         <Title style={styles.content}>
           Harlan Evans
     </Title>
+        </div>
+        <Grid columns={1}>
+          <Grid.Column>
+            <Grid.Row style={styles.row}>
+        <div class='focus-in-contract'>
+        <Header textAlign='center' as='h1' style={styles.subHeader}>
+            Developer
+        </Header>
+        </div>
             </Grid.Row>
             <Grid.Row>
-        <Header textAlign='center' as='h3' style={styles.subHeader}>
-          <i>
-            Developer
-        </i>
-        </Header>\
             </Grid.Row>
             <Grid.Row>
     <div style={styles.centerButton}>
           <div style={styles.buttonGrid}>
+          <div class='focus-in-contract-bck'>
+          <div class='resume'>
             <NavLink 
             to='/resume' 
             style={styles.button}
             onClick={this.handleClick}
-              >
+            >
               Resume
     </NavLink>
+            </div>
+            </div>
           </div>
         </div>
               </Grid.Row>
@@ -62,7 +67,7 @@ const styles = {
     justifyContent: 'center',
     color: '#f1f1f1',
     width: "100%",
-    padding: '20px',
+    // padding: '20px',
     textShadow: '0.5px 0.5px black',
   },
   button: {
@@ -92,7 +97,7 @@ const styles = {
   subHeader: {
     color: '#f1f1f1',
     width: "100%",
-    fontSize: '40px',
+    fontSize: '80px',
     textShadow: '1px 1px black',
     fontWeight: 'lighter',
     margin: '-1px',

@@ -5,29 +5,36 @@ import { Link, } from 'react-router-dom';
 
 const Navbar = () => (
   <Menu inverted secondary style={menu}>
-    <Link to='/aboutme'>
-    <Menu.Item style={text}>
-      About Me
+        <div class='nav'>
+      <Link to='/'>
+          <Menu.Item style={text}>
+            Home
     </Menu.Item>
-    </Link>
-    <Link to='/contact'>
-      <Menu.Item style={text}>
-      Contact
-    </Menu.Item>
-    </Link>
+      </Link>
+        </div>
+    <Menu.Menu position='right'>
+      <div class='nav'>
     <Link to='/portfolio'>
-    <Menu.Item style={text}>
-      Portfolio
-    </Menu.Item>
-    </Link>
-    <Menu.Menu  position='right'>
-
-    <Link to='/'>
         <Menu.Item style={text}>
-      Home
+          Portfolio
     </Menu.Item>
     </Link>
-    </Menu.Menu>
+      </div>
+      <div class='nav'>
+    <Link to='/aboutme'>
+        <Menu.Item style={text}>
+          About Me
+    </Menu.Item>
+    </Link>
+      </div>
+      <div class='nav'>
+    <Link to='/contact'>
+        <Menu.Item style={text}>
+          Contact
+    </Menu.Item>
+    </Link>
+      </div>
+  </Menu.Menu>
   </Menu>
 )
 export default Navbar;

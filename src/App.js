@@ -7,11 +7,11 @@ import AboutMe from './components/AboutMe';
 import Contact from './components/Contact';
 import Portfolio from './components/Portfolio';
 import Hobbies from './components/Hobbies';
-import videoSource from './assets/rain_two.mp4';
-import Player from './components/Player';
+// import videoSource from './assets/rain_two.mp4';
+// import Player from './components/Player';
 import './App.css';
 import './index.css';
-import { Video, } from './styles/Style';
+// import { Video, } from './styles/Style';
 
 
 class App extends React.Component {

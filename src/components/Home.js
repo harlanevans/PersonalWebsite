@@ -1,11 +1,22 @@
 import React from 'react';
-import { NavLink, } from 'react-router-dom'
-import { Header, Button, Grid, } from 'semantic-ui-react';
-import ReactPlayer from 'react-player';
+import { Header, Grid, } from 'semantic-ui-react';
 import { Title } from '../styles/Style';
+import Resume from '../documents/Resume.pdf';
+import ModalImage from "react-modal-image";
 
 class Home extends React.Component {
+  state = {
+    open: false,
+    numPages: null,
+    pageNumber: 1,
+  }
 
+  show = dimmer => () => this.setState({ dimmer, open: true })
+  close = () => this.setState({ open: false })
+
+  onDocumentLoadSuccess = ({ numPages }) => {
+    this.setState({ numPages });
+  }
 
   handleClick(e) {
     e.preventDefault();
@@ -15,43 +26,46 @@ class Home extends React.Component {
   }
 
   render() {
+    // const { open, dimmer, pageNumber, numPages } = this.state
     return (
       <div>
-    <div class='focus-in-contract-faster'>
-        <Title style={styles.content}>
-          Harlan Evans
+        <div class='focus-in-contract-faster'>
+          <Title style={styles.content}>
+            Harlan Evans
     </Title>
         </div>
         <Grid columns={1}>
           <Grid.Column>
             <Grid.Row style={styles.row}>
-        <div class='focus-in-contract'>
-        <Header textAlign='center' as='h1' style={styles.subHeader}>
-            Developer
-        </Header>
-        </div>
+              <div class='focus-in-contract'>
+                <Header textAlign='center' as='h1' style={styles.subHeader}>
+                  Developer
+                </Header>
+              </div>
             </Grid.Row>
             <Grid.Row>
+              <div style={styles.centerButton}>
+                <div style={styles.buttonGrid}>
+                  <div class='focus-in-contract-bck'>
+                    <div class='resume'>
+                      <div style={styles.button}
+                        onClick={this.show('blurring')}>
+                        <a href={Resume} target="_blank">
+                        Resume
+                        </a>
+                      </div>
+                {/* <ModalImage 
+                   small={Resume}
+                  large={Resume}
+                  stackable
+                      /> */}
+                    </div>
+                  </div>
+                </div>
+              </div>
             </Grid.Row>
-            <Grid.Row>
-    <div style={styles.centerButton}>
-          <div style={styles.buttonGrid}>
-          <div class='focus-in-contract-bck'>
-          <div class='resume'>
-            <NavLink 
-            to='/resume' 
-            style={styles.button}
-            onClick={this.handleClick}
-            >
-              Resume
-    </NavLink>
-            </div>
-            </div>
-          </div>
-        </div>
-              </Grid.Row>
-              </Grid.Column>
-              </Grid>
+          </Grid.Column>
+        </Grid>
       </div>
 
     )
@@ -71,11 +85,12 @@ const styles = {
     textShadow: '0.5px 0.5px black',
   },
   button: {
+    cursor: 'pointer',
     // backgroundColor: 'rgba(0, 0, 0)',
     // border: 'black',
     padding: '20px',
     color: 'white',
-    // padding: "10px 25px",
+    padding: "1px 20px",
     textAlign: 'center',
     textDecoration: "none",
     // display: "inline - block",

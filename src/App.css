@@ -21,6 +21,7 @@
     -webkit-transform-origin: 100% 0%;
     transform-origin: 100% 0%;
   }
+
   100% {
     -webkit-transform: scaleY(1);
     transform: scaleY(1);
@@ -36,6 +37,7 @@
     -webkit-transform-origin: 100% 0%;
     transform-origin: 100% 0%;
   }
+
   100% {
     -webkit-transform: scaleY(1);
     transform: scaleY(1);
@@ -70,6 +72,7 @@
     -webkit-transform: scaleY(1);
     transform: scaleY(1);
   }
+
   100% {
     -webkit-transform: scaleY(1.15);
     transform: scaleY(1.15);
@@ -81,6 +84,7 @@
     -webkit-transform: scaleY(1);
     transform: scaleY(1);
   }
+
   100% {
     -webkit-transform: scaleY(1.15);
     transform: scaleY(1.15);
@@ -110,13 +114,24 @@
 } */
 
 .nav {
-  background-color: rgba(0, 0, 0, 0.75);
+  /* background-color: rgba(0, 0, 0, 0.75); */
   transition: 1s background-color;
 }
 
 .nav:hover {
   background-color: rgb(64, 87, 109);
 }
+
+/* these dont work and i want them to */
+.nav:active {
+  background-color: rgb(38, 51, 65) !important;
+}
+
+.a::selection {
+  background-color: rgb(38, 51, 65) !important;
+}
+
+/* these dont work and i want them to ^^ */
 
 .resume {
   transition: 0.5s background-color;
@@ -153,6 +168,7 @@ a:hover {
     filter: blur(12px);
     opacity: 0;
   }
+
   100% {
     -webkit-filter: blur(0px);
     filter: blur(0px);
@@ -167,6 +183,7 @@ a:hover {
     filter: blur(12px);
     opacity: 0;
   }
+
   100% {
     -webkit-filter: blur(0px);
     filter: blur(0px);
@@ -186,6 +203,7 @@ a:hover {
     filter: blur(12px);
     opacity: 0;
   }
+
   100% {
     -webkit-filter: blur(0px);
     filter: blur(0px);
@@ -200,6 +218,7 @@ a:hover {
     filter: blur(12px);
     opacity: 0;
   }
+
   100% {
     -webkit-filter: blur(0px);
     filter: blur(0px);
@@ -219,6 +238,7 @@ a:hover {
     filter: blur(12px);
     opacity: 0;
   }
+
   100% {
     -webkit-filter: blur(0px);
     filter: blur(0px);
@@ -233,6 +253,7 @@ a:hover {
     filter: blur(12px);
     opacity: 0;
   }
+
   100% {
     -webkit-filter: blur(0px);
     filter: blur(0px);
@@ -254,6 +275,7 @@ a:hover {
     filter: blur(12px);
     opacity: 0;
   }
+
   100% {
     -webkit-transform: translateZ(12px);
     transform: translateZ(12px);
@@ -272,6 +294,7 @@ a:hover {
     filter: blur(12px);
     opacity: 0;
   }
+
   100% {
     -webkit-transform: translateZ(12px);
     transform: translateZ(12px);

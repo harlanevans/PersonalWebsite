@@ -15,29 +15,29 @@ const Contact = () => (
           <Grid.Row textAlign='center' style={styles.seperate}>
             <Grid.Column textAlign='center' style={styles.card} width={4}>
               <Grid.Row>
-            <div class='card'>
                 <a href='mailto:harlanevans5@gmail.com' target='blank'>
+            <div class='card-bigger'>
                 Email Me
+            </div>
                 </a>
-            </div>
               </Grid.Row>
             </Grid.Column>
             <Grid.Column textAlign='center' style={styles.card} width={4}>
               <Grid.Row style={styles.href}>
-            <div class='card'>
                   <a href='https://github.com/harlanevans' target='blank'>
+            <div class='card-bigger'>
                   Github
-                  </a>
             </div>
+                  </a>
               </Grid.Row>
             </Grid.Column>
             <Grid.Column textAlign='center' style={styles.card} width={4}>
               <Grid.Row style={styles.href}>
-            <div class='card'>
                   <a href="https://www.linkedin.com/in/harlan-evans-b08027156/" target="blank">
+                <div class='card-bigger'>
                   LinkedIn
-                  </a>
             </div>
+                  </a>
               </Grid.Row>
             </Grid.Column>
           </Grid.Row>

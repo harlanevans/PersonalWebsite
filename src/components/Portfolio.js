@@ -12,7 +12,7 @@ const PersonalLife = () => (
         <Grid columns={2} style={styles.grid} centered>
           <Grid.Row style={styles.seperate} textAlign="center">
             <Grid.Column textAlign="center" width={4}>
-              <a href="https://sxexp.herokuapp.com/" target="">
+              <a href="https://sxexp.herokuapp.com/" target="blank">
                 <div class="card-bigger">Southern Cross Expeditions</div>
               </a>
             </Grid.Column>
